@@ -64,25 +64,3 @@ h1 {
 #btn-clear:hover {
     background-color: rgb(129, 129, 129);
 }
-
-.destaque {
-    color: orange;
-    font-size: 30px;
-    
-}
-
-.desmarcar {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.marcar {
-    text-decoration: line-through;
-    cursor: pointer;
-}
-
-#newd {
-    height: 30px;
-    width: 200px;
-    background-color: red;
-}

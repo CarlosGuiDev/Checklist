@@ -1,6 +1,7 @@
 body {
     background-color: rgb(22, 22, 22);
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -44,7 +45,8 @@ h1 {
 }
 
 #btn {
-    background-color: rgb(177, 177, 177);
+    color: white;
+    background-color: rgb(16, 21, 65);
     height: 30px;
     width: 100px;
     font-size: 18px;
@@ -54,13 +56,14 @@ h1 {
 }
 
 #btn:hover {
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(13, 17, 51);
 }
 
 
 #btn-clear {
-    background-color: rgb(177, 177, 177);
-    margin-left: 480px;
+    color: white;
+    background-color: rgb(16, 21, 65);
+    margin-right: 27px;
     height: 27px;
     width: 90px;
     font-size: 14px;
@@ -70,5 +73,17 @@ h1 {
 }
 
 #btn-clear:hover {
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(13, 17, 51);
+}
+
+#update-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#update {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 15px;
 }

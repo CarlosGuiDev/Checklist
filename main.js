@@ -9,7 +9,7 @@ var enter = document.getElementById('input')
         })
 
         function clicar() {
-            var paragrafo1, newp, marcador = true
+            var paragrafo, newp, marcador = true
             var txt, valor
             txt = document.getElementById('input')
             valor = txt.value
@@ -26,9 +26,15 @@ var enter = document.getElementById('input')
             
             newp.addEventListener('click', function marcando() {
                 if (marcador) {
+                    this.addEventListener("mouseover", function () {
+                        newp5.style.color = "#90ee90"
+                    })
                     newp5.style.textDecoration = 'line-through'
                     marcador = false
                 } else {
+                    this.addEventListener("mouseleave", function () {
+                        newp5.style.color = ""
+                    })
                     newp5.style.textDecoration = ''
                     marcador = true
                 }
@@ -36,6 +42,14 @@ var enter = document.getElementById('input')
 
             newp.addEventListener('dblclick', function remover(){
                 paragrafo.removeChild(newp5)
+            })
+
+            newp.addEventListener("mouseover", function () {
+                newp5.style.color = "red"
+            })
+
+            newp.addEventListener("mouseleave", function () {
+                newp5.style.color = ""
             })
 
             var clear = document.getElementById('input')
@@ -65,9 +79,15 @@ var enter = document.getElementById('input')
                 newp.addEventListener('click', function marcando() {
                     
                     if (marcador) {
+                        this.addEventListener("mouseover", function () {
+                            newp5.style.color = "#90ee90"
+                        })
                         newp5.style.textDecoration = 'line-through'
                         marcador = false  
                     } else {
+                        this.addEventListener("mouseleave", function () {
+                            newp5.style.color = ""
+                        })
                         newp5.style.textDecoration = ''
                         marcador = true
                     }
@@ -77,6 +97,13 @@ var enter = document.getElementById('input')
                     })
                 })
 
+                newp.addEventListener("mouseover", function () {
+                    newp5.style.color = "red"
+                })
+    
+                newp.addEventListener("mouseleave", function () {
+                    newp5.style.color = ""
+                })
 
                 var clear = document.getElementById('input')
                 clear.value = ""

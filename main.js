@@ -10,7 +10,7 @@ var enter = document.getElementById('input')
 
         function clicar() {
             var paragrafo, newp, marcador = true
-            var txt, valor
+            var txt, valor, color = true
             txt = document.getElementById('input')
             valor = txt.value
             paragrafo = document.getElementsByClassName('tarefas')[0] 
@@ -26,17 +26,23 @@ var enter = document.getElementById('input')
             
             newp.addEventListener('click', function marcando() {
                 if (marcador) {
-                    this.addEventListener("mouseover", function () {
-                        newp5.style.color = "#90ee90"
-                    })
                     newp5.style.textDecoration = 'line-through'
                     marcador = false
                 } else {
-                    this.addEventListener("mouseleave", function () {
-                        newp5.style.color = ""
-                    })
                     newp5.style.textDecoration = ''
                     marcador = true
+                }
+
+                if (color) {
+                    this.addEventListener("mouseover", function () {
+                        newp5.style.color = "#90ee90"
+                    })
+                    color = false
+                } else {
+                    this.addEventListener("mouseover", function () {
+                        newp5.style.color = "red"
+                    })
+                    color = true
                 }
             })
 
@@ -62,7 +68,7 @@ var enter = document.getElementById('input')
         function tecla() {
             if (event.key === "Enter") {
                 var paragrafo, newp, marcador = true
-                var txt, valor
+                var txt, valor, color = true
                 txt = document.getElementById('input')
                 valor = txt.value
                 paragrafo = document.getElementsByClassName('tarefas')[0]
@@ -79,17 +85,23 @@ var enter = document.getElementById('input')
                 newp.addEventListener('click', function marcando() {
                     
                     if (marcador) {
-                        this.addEventListener("mouseover", function () {
-                            newp5.style.color = "#90ee90"
-                        })
                         newp5.style.textDecoration = 'line-through'
                         marcador = false  
                     } else {
-                        this.addEventListener("mouseleave", function () {
-                            newp5.style.color = ""
-                        })
                         newp5.style.textDecoration = ''
                         marcador = true
+                    }
+
+                    if (color) {
+                        this.addEventListener("mouseover", function () {
+                            this.style.color = "#90ee90"
+                        })
+                        color = false
+                    } else {
+                        this.addEventListener("mouseover", function () {
+                            this.style.color = "red"
+                        })
+                        color = true
                     }
                     
                     newp.addEventListener("dblclick", function remover(){

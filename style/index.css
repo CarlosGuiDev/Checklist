@@ -52,7 +52,7 @@ h1 {
     font-size: 18px;
     border-radius: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
 }
 
 #btn:hover {
@@ -62,18 +62,18 @@ h1 {
 
 #btn-clear {
     color: white;
-    background-color: rgb(16, 21, 65);
+    background-color: rgb(170, 0, 0);
     margin-right: 27px;
     height: 27px;
     width: 90px;
     font-size: 14px;
     border-radius: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
 }
 
 #btn-clear:hover {
-    background-color: rgb(13, 17, 51);
+    background-color: rgb(116, 0, 0);
 }
 
 #update-area {

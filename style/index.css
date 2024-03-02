@@ -10,11 +10,18 @@ h1 {
     font-size: 40px;
 }
 
+#skin {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+}
+
 #main {
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    height: 560px;
+    height: 635px;
     width: 600px;
     border-radius: 15px;
 }
